@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizMe.Domain.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizMe.Domain.Application.DTOs", "Src\Domain\QuizMe.Domain.Application.DTOs\QuizMe.Domain.Application.DTOs.csproj", "{3821941D-9382-4DBC-AC8B-289B9F6B6148}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizMe.Persistence", "Src\Infrastructure\QuizMe.Persistence\QuizMe.Persistence.csproj", "{1D594C53-95A8-4754-AE40-99C0BAEDAF1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{3821941D-9382-4DBC-AC8B-289B9F6B6148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3821941D-9382-4DBC-AC8B-289B9F6B6148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3821941D-9382-4DBC-AC8B-289B9F6B6148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D594C53-95A8-4754-AE40-99C0BAEDAF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D594C53-95A8-4754-AE40-99C0BAEDAF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D594C53-95A8-4754-AE40-99C0BAEDAF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D594C53-95A8-4754-AE40-99C0BAEDAF1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{35585D72-D19B-46D1-A5F4-575E98DB98B1} = {2AB14ECE-2BC2-4182-A28B-3712DA02EF6B}
 		{20A89A6A-1259-49D3-A821-AA38EE9CF456} = {CE1C7162-D7CF-4F17-BFDD-C4649294FC80}
 		{3821941D-9382-4DBC-AC8B-289B9F6B6148} = {CE1C7162-D7CF-4F17-BFDD-C4649294FC80}
+		{1D594C53-95A8-4754-AE40-99C0BAEDAF1D} = {B5130F60-55DC-427F-9051-611558071076}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27C8624E-2624-4431-8570-3D660C0348AC}
