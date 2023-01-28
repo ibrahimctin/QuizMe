@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\QuizMe.Domain.Application\QuizMe.Domain.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\QuizMe.Domain.Entities\QuizMe.Domain.Entities.csproj" />
+    <ProjectReference Include="..\QuizMe.Infrastructure\QuizMe.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

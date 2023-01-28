@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using QuizMe.Domain.Application.Contracts.Persistence;
+using QuizMe.Domain.Application.Contracts.Persistence.Repositories;
 using QuizMe.Domain.Entities.Common;
 using QuizMe.Persistence.Context;
 using System.Linq.Expressions;
 
 namespace QuizMe.Persistence.Repositories
 {
-    public class RepositoryBase<T> : IRepositoryBase<T> where T : BaseEntity<string>
+    public class RepositoryBase<T> : IRepositoryBase<T> where T : BaseEntity<string>,new()
     {
         private readonly AppDbContext _context;
         private readonly DbSet<T> _dbSet;

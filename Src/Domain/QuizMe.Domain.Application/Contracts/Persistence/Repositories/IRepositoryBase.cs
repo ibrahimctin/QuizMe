@@ -1,8 +1,9 @@
-﻿using System.Linq.Expressions;
+﻿using QuizMe.Domain.Entities.Common;
+using System.Linq.Expressions;
 
-namespace QuizMe.Domain.Application.Contracts.Persistence
+namespace QuizMe.Domain.Application.Contracts.Persistence.Repositories
 {
-    public interface IRepositoryBase<T> where T : class
+    public interface IRepositoryBase<T> where T : BaseEntity<string>, new()
     {
         ValueTask<T> CreateAsync(T entity);
         T Update(T entity);

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\QuizMe.Domain.Entities\QuizMe.Domain.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
