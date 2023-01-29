@@ -1,9 +1,12 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using QuizMe.Domain.Application.Options;
+using System.Text;
 
 namespace QuizMe.Infrastructure.Registrations
 {
-    public class AuthenticationExtension
+    public static class AuthenticationExtension
     {
         public static void AddCustomizedAuthentication(this IServiceCollection services, JwtSettings _JwtSettings)
         {
@@ -24,3 +27,4 @@ namespace QuizMe.Infrastructure.Registrations
 
         }
     }
+ }
