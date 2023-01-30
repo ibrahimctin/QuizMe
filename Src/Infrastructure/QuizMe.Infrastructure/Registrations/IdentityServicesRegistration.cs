@@ -25,12 +25,12 @@ namespace QuizMe.Infrastructure.Registrations
         }
         public static void ConfigureIdentity(this IServiceCollection services)
         {
-            var builder = services.AddIdentity<AppUser, IdentityRole>(opt =>
+            var builder = services.AddIdentity<AppUser, AppRole>(opt =>
             {
                 opt.Password.RequireNonAlphanumeric = false;
                 opt.Password.RequireLowercase = false;
                 opt.Password.RequireUppercase = false;
-            }).AddRoleManager<RoleManager<IdentityRole>>()
+            }).AddRoleManager<RoleManager<AppRole>>()
              .AddEntityFrameworkStores<AppDbContext>()
           .AddDefaultTokenProviders();
         }

@@ -1,4 +1,5 @@
 using QuizMe.Domain.Application.Options;
+using QuizMe.Domain.Application.Registrations;
 using QuizMe.Infrastructure.Registrations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.ConfigureInfrastructureServices(builder.Configuration);
 builder.Services.ConfigureIdentityServices(builder.Configuration);
+builder.Services.ConfigureApplicationServices();
 
 builder.Services.ConfigureIdentity();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
