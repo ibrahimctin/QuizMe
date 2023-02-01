@@ -1,10 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using QuizMe.Domain.Entities.DbModels;
-using QuizMe.Domain.Entities.DbModels.IdentityEntities;
-using System.Reflection;
-
+﻿
 namespace QuizMe.Persistence.Context
 {
     public class AppDbContext : IdentityDbContext<AppUser, AppRole, string, AppUserClaim, AppUserRole, AppUserLogin, AppRoleClaim, AppUserToken>

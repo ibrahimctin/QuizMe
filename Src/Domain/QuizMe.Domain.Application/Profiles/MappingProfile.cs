@@ -1,7 +1,6 @@
-﻿using AutoMapper;
-using QuizMe.Domain.Application.DTOs.Users.Authentication.RequestDtos;
-using QuizMe.Domain.Application.DTOs.Users.ResponseDtos;
-using QuizMe.Domain.Entities.DbModels.IdentityEntities;
+﻿
+
+using QuizMe.Domain.Application.DTOs.Quizzes.ResponseDtos;
 
 namespace QuizMe.Domain.Application.Profiles
 {
@@ -12,6 +11,10 @@ namespace QuizMe.Domain.Application.Profiles
             
             CreateMap<AppUser,RegisterRequest>().ReverseMap();  
             CreateMap<AppUser,AppUserDetailResponse>().ReverseMap();
+
+            CreateMap<Quiz, CreateQuizRequest>().ReverseMap();
+            CreateMap<Quiz, UpdateQuizRequest>().ReverseMap();
+            CreateMap<Quiz, QuizDetailResponse>().ReverseMap();
             
         }
     }

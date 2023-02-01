@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using QuizMe.Domain.Entities.DbModels.IdentityEntities;
+﻿
 
 namespace QuizMe.Infrastructure.Configurations
 {

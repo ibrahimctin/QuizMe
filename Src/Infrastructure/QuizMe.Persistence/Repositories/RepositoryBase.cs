@@ -1,8 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using QuizMe.Domain.Application.Contracts.Persistence.Repositories;
-using QuizMe.Domain.Entities.Common;
-using QuizMe.Persistence.Context;
-using System.Linq.Expressions;
+﻿
 
 namespace QuizMe.Persistence.Repositories
 {

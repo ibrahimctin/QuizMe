@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using QuizMe.Domain.Application.Contracts.Persistence.Uow;
 using QuizMe.Persistence.Context;
 
 namespace QuizMe.Infrastructure.Registrations
@@ -11,10 +12,10 @@ namespace QuizMe.Infrastructure.Registrations
         {
             services.AddDbContext<AppDbContext>(options =>
                options.UseSqlServer(
-                   configuration.GetConnectionString("QuizMeConn")));
-
+            configuration.GetConnectionString("QuizMeConn")));
 
            
+
 
 
             return services;

@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
+﻿
 namespace QuizMe.Domain.Application.DTOs.Users.Authentication.RequestDtos
 {
     public class RegisterRequest

@@ -1,5 +1,5 @@
-﻿using QuizMe.Domain.Entities.Common;
-using QuizMe.Domain.Entities.DbModels.IdentityEntities;
+﻿
+
 
 namespace QuizMe.Domain.Entities.DbModels
 {

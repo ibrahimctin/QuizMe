@@ -1,12 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using QuizMe.Domain.Application.Helpers;
-using QuizMe.Domain.Application.Options;
-using QuizMe.Domain.Entities.DbModels.IdentityEntities;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
+﻿
 
 namespace QuizMe.Infrastructure.Helpers
 {

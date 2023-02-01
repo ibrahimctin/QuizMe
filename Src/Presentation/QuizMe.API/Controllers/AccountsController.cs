@@ -1,7 +1,4 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using QuizMe.Domain.Application.Features.Identity.Authentication.Login;
-using QuizMe.Domain.Application.Features.Identity.Authentication.Register;
+﻿
 
 namespace QuizMe.API.Controllers
 {

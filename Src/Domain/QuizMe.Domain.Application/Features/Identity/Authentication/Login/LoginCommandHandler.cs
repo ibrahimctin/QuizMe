@@ -1,9 +1,4 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Identity;
-using QuizMe.Domain.Application.DTOs.Users.Authentication.ResponseDtos;
-using QuizMe.Domain.Application.Helpers;
-using QuizMe.Domain.Entities.DbModels.IdentityEntities;
-using System.IdentityModel.Tokens.Jwt;
+﻿
 
 namespace QuizMe.Domain.Application.Features.Identity.Authentication.Login
 {

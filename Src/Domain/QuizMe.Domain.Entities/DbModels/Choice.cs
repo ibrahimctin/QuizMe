@@ -1,4 +1,4 @@
-﻿using QuizMe.Domain.Entities.Common;
+﻿
 
 namespace QuizMe.Domain.Entities.DbModels
 {
