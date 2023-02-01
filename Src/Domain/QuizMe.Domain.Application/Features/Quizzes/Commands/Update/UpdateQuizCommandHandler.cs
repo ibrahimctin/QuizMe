@@ -1,4 +1,4 @@
-﻿namespace QuizMe.Domain.Application.Features.Quizzes.Update
+﻿namespace QuizMe.Domain.Application.Features.Quizzes.Commands.Update
 {
     public class UpdateQuizCommandHandler : IRequestHandler<UpdateQuizCommand, ValidatedResult<string>>
     {
@@ -15,7 +15,7 @@
         {
             var quizFromDb = await GetQuiz(request.Id);
 
-            if (quizFromDb is null) 
+            if (quizFromDb is null)
             {
                 return ValidatedResult<string>.Failed(404, "Couldn't find this quiz");
             }
@@ -32,7 +32,7 @@
 
         #region Private Queries
 
-        private async Task<Quiz> GetQuiz(string id ) => await _uOw.QuizRepository.GetAsync(ğ=>ğ.Id==id);
+        private async Task<Quiz> GetQuiz(string id) => await _uOw.QuizRepository.GetAsync(ğ => ğ.Id == id);
 
         #endregion
     }

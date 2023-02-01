@@ -1,12 +1,11 @@
-﻿
-namespace QuizMe.Domain.Application.Features.Quizzes.Create
+﻿namespace QuizMe.Domain.Application.Features.Quizzes.Commands.Create
 {
     public class CreateQuizCommandHandler : IRequestHandler<CreateQuizCommand, ValidatedResult<string>>
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _uOw;
 
-        public CreateQuizCommandHandler(IMapper mapper,  IUnitOfWork uOw)
+        public CreateQuizCommandHandler(IMapper mapper, IUnitOfWork uOw)
         {
             _mapper = mapper;
             _uOw = uOw;

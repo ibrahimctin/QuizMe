@@ -3,20 +3,20 @@ namespace QuizMe.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class QuizzesController : ControllerBase
+    public class QuestionsController : ControllerBase
     {
         private readonly IMediator _mediator;
 
-        public QuizzesController(IMediator mediator)
+        public QuestionsController(IMediator mediator)
         {
             _mediator = mediator;
         }
 
 
-        [HttpPost("CreateQuiz")]
-        public async Task<IActionResult> Post([FromBody] CreateQuizRequest request)
+        [HttpPost("CreateQuestion")]
+        public async Task<IActionResult> Post([FromBody] CreateQuestionRequest request)
         {
-            var command = new CreateQuizCommand { CreateQuizRequest = request };
+            var command = new CreateQuestionCommand { CreateQuestionRequest = request };
             var repsonse = await _mediator.Send(command);
             return Ok(repsonse);
         }
@@ -26,16 +26,16 @@ namespace QuizMe.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
-            var command = new DeleteQuizCommand { Id = id };
+            var command = new DeleteQuestionCommand { Id = id };
             var response = await _mediator.Send(command);
             return Ok(response);
         }
 
 
-        [HttpPost("UpdateQuiz")]
-        public async Task<IActionResult> Update([FromBody] UpdateQuizRequest request,string id)
+        [HttpPost("UpdateQuestion")]
+        public async Task<IActionResult> Update([FromBody] UpdateQuestionRequest request,string id)
         {
-            var command = new UpdateQuizCommand { UpdateQuizRequest = request ,Id=id};
+            var command = new UpdateQuestionCommand { UpdateQuestionRequest = request ,Id=id};
             var repsonse = await _mediator.Send(command);
             return Ok(repsonse);
         }

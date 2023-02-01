@@ -14,4 +14,8 @@ global using System.Reflection;
 global using Microsoft.AspNetCore.Identity;
 global using QuizMe.Domain.Application.Helpers; 
 global using QuizMe.Domain.Application.Results;
+global using QuizMe.Domain.Application.DTOs.Questions.RequestDtos;
+global using QuizMe.Domain.Application.DTOs.Quizzes.ResponseDtos;
+
+
 

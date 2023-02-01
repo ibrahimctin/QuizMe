@@ -1,7 +1,4 @@
 ﻿
-
-using QuizMe.Domain.Application.DTOs.Quizzes.ResponseDtos;
-
 namespace QuizMe.Domain.Application.Profiles
 {
     public class MappingProfile:Profile
@@ -15,6 +12,10 @@ namespace QuizMe.Domain.Application.Profiles
             CreateMap<Quiz, CreateQuizRequest>().ReverseMap();
             CreateMap<Quiz, UpdateQuizRequest>().ReverseMap();
             CreateMap<Quiz, QuizDetailResponse>().ReverseMap();
+
+            CreateMap<Question, CreateQuestionRequest>().ReverseMap();
+            CreateMap<Question, UpdateQuestionRequest>().ReverseMap();
+            CreateMap<Question, QuizDetailResponse>().ReverseMap();
             
         }
     }
