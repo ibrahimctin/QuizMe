@@ -16,7 +16,7 @@
             var quizFromDb = await GetQuizAsync(request.CreateQuestionRequest.QuizId);
             if (quizFromDb is null)
             {
-                return ValidatedResult<string>.Failed(404, "Couldn't find this quiz");
+                return ValidatedResult<string>.Failed(404, "Couldn't find this Question");
             }
 
             quizFromDb.NumberOfQuestions++;

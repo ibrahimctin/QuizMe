@@ -22,7 +22,7 @@
 
             if (deletedQuestion is false)
             {
-                return ValidatedResult<bool>.Failed(404, "Couldn't find this quiz");
+                return ValidatedResult<bool>.Failed(404, "Couldn't find this Question");
             }
             var quiz = await GetQuiz(questionFromDb.QuizId);
             quiz.NumberOfQuestions--;
