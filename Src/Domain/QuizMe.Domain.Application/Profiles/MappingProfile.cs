@@ -19,6 +19,8 @@ namespace QuizMe.Domain.Application.Profiles
             CreateMap<Question, QuestionDetailResponse>().ReverseMap();
 
             CreateMap<Choice, CreateChoiceRequest>().ReverseMap();
+            CreateMap<Choice, UpdateChoiceRequest>().ReverseMap();
+            CreateMap<Choice, ChoiceDetailResponse>().ReverseMap();
             
         }
     }

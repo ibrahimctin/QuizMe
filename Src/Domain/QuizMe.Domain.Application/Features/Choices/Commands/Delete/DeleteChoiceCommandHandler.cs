@@ -15,7 +15,7 @@
 
             if (deletedChoice is false)
             {
-                return ValidatedResult<bool>.Failed(404, "Couldn't find this quiz");
+                return ValidatedResult<bool>.Failed(404, "Couldn't find this choice options");
             }
             await _uOw.CommitAsync();
 

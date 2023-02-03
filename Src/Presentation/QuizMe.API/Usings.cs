@@ -19,3 +19,5 @@ global using QuizMe.Domain.Application.DTOs.Choices.RequestDtos;
 global using QuizMe.Domain.Application.Features.Choices.Commands.Create;
 global using QuizMe.Domain.Application.Features.Choices.Commands.Delete;
 global using QuizMe.Domain.Application.Features.Choices.Commands.Update;
+global using QuizMe.Domain.Application.Features.Choices.Queries;
+global using QuizMe.Domain.Application.Features.Quizzes.Queries;
