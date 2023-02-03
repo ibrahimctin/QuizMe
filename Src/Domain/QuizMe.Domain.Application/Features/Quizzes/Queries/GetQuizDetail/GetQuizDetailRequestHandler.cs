@@ -1,6 +1,6 @@
 ﻿using QuizMe.Domain.Application.Features.Questions.Queries.GetQuestionDetail;
 
-namespace QuizMe.Domain.Application.Features.Quizzes.Queries
+namespace QuizMe.Domain.Application.Features.Quizzes.Queries.GetQuizDetail
 {
     public class GetQuizDetailRequestHandler : IRequestHandler<GetQuizDetailRequest, ValidatedResult<QuizDetailResponse>>
     {
@@ -15,18 +15,18 @@ namespace QuizMe.Domain.Application.Features.Quizzes.Queries
 
         public async Task<ValidatedResult<QuizDetailResponse>> Handle(GetQuizDetailRequest request, CancellationToken cancellationToken)
         {
-           
-                var quizFromDb = await GetQuiz(request.Id);
-                if (quizFromDb is null)
-                {
-                    return ValidatedResult<QuizDetailResponse>.Failed(404, "Couldn't find this Question");
-                }
-                var quizPayload = _mapper.Map<QuizDetailResponse>(quizFromDb);
-                return ValidatedResult<QuizDetailResponse>.Passed(quizPayload);
-            
+
+            var quizFromDb = await GetQuiz(request.Id);
+            if (quizFromDb is null)
+            {
+                return ValidatedResult<QuizDetailResponse>.Failed(404, "Couldn't find this Question");
+            }
+            var quizPayload = _mapper.Map<QuizDetailResponse>(quizFromDb);
+            return ValidatedResult<QuizDetailResponse>.Passed(quizPayload);
 
 
-           
+
+
         }
         #region Private Queries
 

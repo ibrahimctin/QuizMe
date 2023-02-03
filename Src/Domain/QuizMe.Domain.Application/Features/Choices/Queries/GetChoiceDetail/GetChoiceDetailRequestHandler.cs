@@ -1,5 +1,4 @@
-﻿
-namespace QuizMe.Domain.Application.Features.Choices.Queries
+﻿namespace QuizMe.Domain.Application.Features.Choices.Queries.GetChoiceDetail
 {
     public class GetChoiceDetailRequestHandler : IRequestHandler<GetChoiceDetailRequest, ValidatedResult<ChoiceDetailResponse>>
     {

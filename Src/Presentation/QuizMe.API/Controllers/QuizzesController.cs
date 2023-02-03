@@ -1,6 +1,4 @@
 ﻿
-
-
 namespace QuizMe.API.Controllers
 {
     [Route("api/[controller]")]
