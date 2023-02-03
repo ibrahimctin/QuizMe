@@ -19,8 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Questions\Queries\" />
-    <Folder Include="Features\Quizzes\Queries\" />
+    <Folder Include="Features\Choices\Queries\" />
     <Folder Include="Profiles\" />
   </ItemGroup>
 

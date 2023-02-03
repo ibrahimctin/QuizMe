@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Choices\ResponseDtos\" />
     <Folder Include="Users\RequestDtos\" />
     <Folder Include="Users\ResponseDtos\" />
   </ItemGroup>

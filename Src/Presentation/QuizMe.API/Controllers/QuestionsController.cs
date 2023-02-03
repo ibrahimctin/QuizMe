@@ -1,4 +1,6 @@
 ﻿
+
+
 namespace QuizMe.API.Controllers
 {
     [Route("api/[controller]")]
@@ -39,5 +41,9 @@ namespace QuizMe.API.Controllers
             var repsonse = await _mediator.Send(command);
             return Ok(repsonse);
         }
+
+        [HttpGet("GetQuestionDetail")]
+        public async Task<IActionResult> GetQuestion( string id)
+            => Ok(await _mediator.Send(new GetQuestionDetailRequest { Id = id }));
     }
 }

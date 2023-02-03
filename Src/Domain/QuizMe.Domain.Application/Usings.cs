@@ -16,6 +16,9 @@ global using QuizMe.Domain.Application.Helpers;
 global using QuizMe.Domain.Application.Results;
 global using QuizMe.Domain.Application.DTOs.Questions.RequestDtos;
 global using QuizMe.Domain.Application.DTOs.Quizzes.ResponseDtos;
+global using QuizMe.Domain.Application.DTOs.Questions.ResponseDtos;
+global using QuizMe.Domain.Application.DTOs.Choices.RequestDtos;
+
 
 
 
